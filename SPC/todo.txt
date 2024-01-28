@@ -1,0 +1,2 @@
+finish the menu 
+write the fist application(Pong)
