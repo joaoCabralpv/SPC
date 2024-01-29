@@ -39,7 +39,7 @@
     <ClCompile Include="Menu.cpp">
       <Filter>Menu</Filter>
     </ClCompile>
-    <ClCompile Include="Icon.cpp">
+    <ClCompile Include="Button.cpp">
       <Filter>Menu\Icon</Filter>
     </ClCompile>
     <ClCompile Include="common.h">
@@ -64,7 +64,7 @@
     <ClInclude Include="Menu.h">
       <Filter>Menu</Filter>
     </ClInclude>
-    <ClInclude Include="Icon.h">
+    <ClInclude Include="Button.h">
       <Filter>Menu\Icon</Filter>
     </ClInclude>
   </ItemGroup>

@@ -11,8 +11,8 @@ Menu::Menu()
 	for (auto& entry : std::filesystem::directory_iterator(path)) { //reads all the files in the icons folder
 		std::string path = entry.path().filename().string();
 		const char* file = path.c_str(); //converts the path names to a Cstring (const char*)
-		this->icons.push_back(
-			Icon(
+		this->buttons.push_back(
+			Button(
 				path,
 				file,
 				(i%12+1)*60 
