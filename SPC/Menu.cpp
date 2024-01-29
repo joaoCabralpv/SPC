@@ -13,12 +13,26 @@ Menu::Menu()
 		const char* file = path.c_str(); //converts the path names to a Cstring (const char*)
 		this->buttons.push_back(
 			Button(
-				path,
-				file,
-				(i%12+1)*60 
-				,((i/12)+1)*60 //devides and modulates by 12 because each row of the menu has 12 icons
-			)); 
+				std::string("pong"),
+				"./icons/pong.png",
+				(i % 12 + 1) * 60
+				, ((i / 12) + 1) * 60 //devides and modulates by 12 because each row of the menu has 12 icons
+			));
 		i++;
 	}
 
 }
+ 
+void Menu::Render()
+{	
+	
+	for (Button button : this->buttons)
+	{
+		//std::cout << "Rendering" << std::endl;
+		button.Render();
+	}
+}
+
+
+
+

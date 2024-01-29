@@ -1,15 +1,19 @@
 #include "common.h"
+#include "Menu.h"
 
 
-void init()
+Menu init()
 {
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     InitWindow(DefaulWidth, DefaultHeight, "SPC");
 
     SetTargetFPS(60);
+    Menu menu;
+    return menu;
+
 }
 
-void loop()
+void loop(Menu menu)
 {
     while (!WindowShouldClose())
     {
@@ -17,6 +21,9 @@ void loop()
 
         // Draw
         BeginDrawing();
+        
+        menu.Render();
+
         ClearBackground(RAYWHITE);
 
         EndDrawing();
@@ -30,9 +37,12 @@ void close()
 
 int main(void)
 {
-    init();
+    Menu menu = init();
 
-    loop();
+    //Menu& menuRef = menu;
+
+    loop(menu);
+
 
     close();
 

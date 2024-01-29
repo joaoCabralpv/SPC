@@ -8,8 +8,8 @@ class Menu
 {	
 public:
 	Menu();
+	void Render();
 private:
 	std::vector<Button> buttons;
-	void LoadIcons();
-	void LoadApp();
+	
 };

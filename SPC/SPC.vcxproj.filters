@@ -22,7 +22,7 @@
     <Filter Include="Menu">
       <UniqueIdentifier>{10f27d0e-52c8-42ab-81fd-6676624451f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Menu\Icon">
+    <Filter Include="Menu\Button">
       <UniqueIdentifier>{b75296bb-a875-4022-81ab-6c0eafd022fb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -40,7 +40,7 @@
       <Filter>Menu</Filter>
     </ClCompile>
     <ClCompile Include="Button.cpp">
-      <Filter>Menu\Icon</Filter>
+      <Filter>Menu\Button</Filter>
     </ClCompile>
     <ClCompile Include="common.h">
       <Filter>Arquivos de Cabeçalho</Filter>
@@ -65,7 +65,7 @@
       <Filter>Menu</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
-      <Filter>Menu\Icon</Filter>
+      <Filter>Menu\Button</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

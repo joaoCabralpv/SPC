@@ -4,15 +4,18 @@
 #include <string>
 
 
-class Button : public TextureWraper
+class Button
 {
-public:
+private:
 	int x, y;
 
 	std::string name;
+	std::string path;
 
+	Texture2D texture;
+public:
 	Button(std::string name, const char* path, int x, int y);
-	void Render() override;
+	void Render();
 
 
 };
