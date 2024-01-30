@@ -5,7 +5,7 @@
 Menu init()
 {
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
-    InitWindow(DefaulWidth, DefaultHeight, "SPC");
+    InitWindow(DefaultWidth, DefaultHeight, "SPC");
 
     SetTargetFPS(60);
     Menu menu;
