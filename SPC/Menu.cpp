@@ -4,6 +4,7 @@
 #include <string>
 
 
+
 Menu::Menu()
 {	//loads all the icons
 	std::string iconPath = "./icons";
@@ -21,6 +22,7 @@ Menu::Menu()
 		i++;
 	}
 
+			
 }
  
 void Menu::Render()
@@ -29,7 +31,7 @@ void Menu::Render()
 	for (Button button : this->buttons)
 	{
 		//std::cout << "Rendering" << std::endl;
-		button.Render();
+		button.Update();
 	}
 }
 

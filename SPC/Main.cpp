@@ -1,17 +1,9 @@
 #include "common.h"
 #include "Menu.h"
+#include "Window.h"
 
 
-Menu init()
-{
-    SetConfigFlags(FLAG_WINDOW_RESIZABLE);
-    InitWindow(DefaultWidth, DefaultHeight, "SPC");
 
-    SetTargetFPS(60);
-    Menu menu;
-    return menu;
-
-}
 
 void loop(Menu menu)
 {
@@ -30,21 +22,17 @@ void loop(Menu menu)
     }
 }
 
-void close()
-{
-    CloseWindow();
-}
 
 int main(void)
 {
-    Menu menu = init();
+    
+    StartWindow();
 
     //Menu& menuRef = menu;
-
+    Menu menu;
     loop(menu);
 
-
-    close();
+    CloseWindow();
 
     return 0;
 }

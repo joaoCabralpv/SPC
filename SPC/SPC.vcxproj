@@ -149,16 +149,18 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Pong.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="icons\Pong.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Apps.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Pong.h" />
-    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="todo.txt" />

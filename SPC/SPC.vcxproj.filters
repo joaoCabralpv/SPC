@@ -16,21 +16,21 @@
     <Filter Include="Arquivos de Recurso\Icons">
       <UniqueIdentifier>{0ff3caab-11eb-4a56-823a-705dc59d85de}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Arquivos de Origem\Menu">
-      <UniqueIdentifier>{dbbf8f9a-d6af-4072-bb31-b934fac3dab3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Menu">
       <UniqueIdentifier>{10f27d0e-52c8-42ab-81fd-6676624451f4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Menu\Button">
       <UniqueIdentifier>{b75296bb-a875-4022-81ab-6c0eafd022fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pong">
+      <UniqueIdentifier>{fc1444aa-6b78-4955-8234-fc28b3082f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{b01fd39b-fe19-426a-a388-7d55fa8c41ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Pong.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Texture.cpp">
@@ -45,6 +45,12 @@
     <ClCompile Include="common.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClCompile>
+    <ClCompile Include="Pong.cpp">
+      <Filter>Pong</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="icons\Pong.png">
@@ -52,13 +58,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Pong.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Includes.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Menu.h">
@@ -66,6 +66,15 @@
     </ClInclude>
     <ClInclude Include="Button.h">
       <Filter>Menu\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Pong.h">
+      <Filter>Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="Apps.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Window</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

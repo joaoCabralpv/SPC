@@ -1,8 +1,12 @@
 #include "Button.h"
 #include <string>
-#include "Texture.h"
 #include <iostream>
 #include <algorithm>
+#include "Apps.h"
+#include "Window.h"
+
+#define TEXTURESIZE 50
+
 
 
 Button::Button(std::string name, const char* path, int x, int y)
@@ -19,8 +23,8 @@ void Button::Render()
 	//std::cout << this->x << this->y << std::endl;
 	float screenWidthToDefaultWidthRatio = ((float)GetScreenWidth() / (float)DefaultWidth);
 	float screenWidthToDefaultHeightRatio = ((float)GetScreenHeight() / (float)DefaultHeight);
-	int xPos =  this->x * screenWidthToDefaultWidthRatio;
-	int yPos =  this->y * screenWidthToDefaultHeightRatio;
+	float xPos = this->x * screenWidthToDefaultWidthRatio;
+	float yPos =  this->y * screenWidthToDefaultHeightRatio;
 	//std::cout << xPos << ":" <<GetScreenWidth() << " " << yPos << ":" << GetScreenHeight() << std::endl;
 	float scale;
 	if (std::min(GetScreenWidth(), GetScreenHeight()) == GetScreenWidth())
@@ -35,3 +39,38 @@ void Button::Render()
 	//DrawTexture(this->texture, xPos, yPos, WHITE);
 	//DrawTexture(this->texture, 50, 50, WHITE);
 }
+
+bool Button::CheckIfMouseIsHovering()
+{
+	int xMouse = GetMouseX();
+	int yMouse = GetMouseY();
+
+	if ((xMouse >= this->x) && (xMouse <= (this->x + TEXTURESIZE)))
+		if ((yMouse >= this->y) && (yMouse <= (this->y + TEXTURESIZE)))
+			return true;
+	return false;
+}
+
+void Button::RunApp()
+{
+	
+	CloseWindow();
+
+	if (this->name == "Pong.png")
+		Pong();
+	else
+		std::cout << "Invalid name: " << this->name << std::endl;
+
+	StartWindow();
+
+}
+
+void Button::Update()
+{
+	if (this->CheckIfMouseIsHovering() && IsMouseButtonReleased(MOUSE_BUTTON_LEFT))
+	{
+		this->RunApp();
+	}
+	this->Render();
+}
+
