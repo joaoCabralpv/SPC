@@ -33,9 +33,6 @@
     <ClCompile Include="Main.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Menu.cpp">
       <Filter>Menu</Filter>
     </ClCompile>

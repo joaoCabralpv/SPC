@@ -30,7 +30,6 @@ void Menu::Render()
 	
 	for (Button button : this->buttons)
 	{
-		//std::cout << "Rendering" << std::endl;
 		button.Update();
 	}
 }

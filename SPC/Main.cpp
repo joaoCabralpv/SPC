@@ -28,7 +28,6 @@ int main(void)
     
     StartWindow();
 
-    //Menu& menuRef = menu;
     Menu menu;
     loop(menu);
 
