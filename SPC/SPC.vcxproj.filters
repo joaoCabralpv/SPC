@@ -28,6 +28,9 @@
     <Filter Include="Window">
       <UniqueIdentifier>{b01fd39b-fe19-426a-a388-7d55fa8c41ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{3b125e2f-ca96-4309-a0d1-ae51ae1821a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -42,16 +45,31 @@
     <ClCompile Include="common.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClCompile>
-    <ClCompile Include="Pong.cpp">
+    <ClCompile Include="Pong\Pong.cpp">
       <Filter>Pong</Filter>
     </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Window</Filter>
     </ClCompile>
+    <ClCompile Include="Pong\Paddle.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Pong\Ball.cpp">
+      <Filter>Pong</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="icons\Pong.png">
       <Filter>Arquivos de Recurso\Icons</Filter>
+    </Image>
+    <Image Include="Pong\ball.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="Pong\paddle.png">
+      <Filter>Arquivos de Recurso</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +82,7 @@
     <ClInclude Include="Button.h">
       <Filter>Menu\Button</Filter>
     </ClInclude>
-    <ClInclude Include="Pong.h">
+    <ClInclude Include="Pong\Pong.h">
       <Filter>Pong</Filter>
     </ClInclude>
     <ClInclude Include="Apps.h">
@@ -73,8 +91,14 @@
     <ClInclude Include="Window.h">
       <Filter>Window</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="todo.txt" />
+    <ClInclude Include="Pong\Paddle.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Pong\Ball.h">
+      <Filter>Pong</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

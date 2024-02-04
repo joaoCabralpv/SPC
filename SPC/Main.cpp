@@ -3,14 +3,10 @@
 #include "Window.h"
 
 
-
-
-void loop(Menu menu)
+void loop(Menu& menu)
 {
     while (!WindowShouldClose())
     {
-        // Update
-
         // Draw
         BeginDrawing();
         

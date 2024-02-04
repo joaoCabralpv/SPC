@@ -143,26 +143,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Pong\Ball.cpp" />
     <ClCompile Include="common.h" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Pong.cpp" />
+    <ClCompile Include="Pong\Paddle.cpp" />
+    <ClCompile Include="Pong\Pong.cpp" />
+    <ClCompile Include="Render.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="icons\Pong.png" />
+    <Image Include="Pong\ball.png" />
+    <Image Include="Pong\paddle.png" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Apps.h" />
+    <ClInclude Include="Pong\Ball.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="Pong.h" />
+    <ClInclude Include="Pong\Paddle.h" />
+    <ClInclude Include="Pong\Pong.h" />
+    <ClInclude Include="Render.h" />
     <ClInclude Include="Window.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="todo.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
